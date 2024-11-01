@@ -1,0 +1,7 @@
+.idea/
+*.iml
+.idea/*
+test/.pytest_cache/**
+.pytest_cache/**
+allure-results/**
+allure-report/**
