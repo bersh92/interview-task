@@ -7,7 +7,6 @@ def test_verify_rates_and_fees(app):
     app.scotiaBank.open_url('https://www.scotiabank.com/ca/en/personal.html')
     app.scotiaBank.click_allow_cookies_if_present()
     app.scotiaBank.click_view_all_in_rates_and_fees()
-    app.scotiaBank.rates_and_fees_title()
     app.assert_that(app.wd.current_url).is_equal_to('https://www.scotiabank.com/ca/en/personal/rates-prices.html')
     app.assert_that(app.scotiaBank.rates_and_fees_title()).is_equal_to('Rates and fees')
 
